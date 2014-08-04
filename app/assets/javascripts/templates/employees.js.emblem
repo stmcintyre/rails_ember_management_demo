@@ -2,4 +2,7 @@ article#employees
   h1 Employees
   ul
     each employee in controller
-      li= employee.fullName
+      link-to 'employee' employee tagName="li"
+        employee.fullName
+
+outlet
