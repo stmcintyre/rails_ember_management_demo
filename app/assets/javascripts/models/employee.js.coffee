@@ -5,3 +5,7 @@ App.Employee = DS.Model.extend
   phone: DS.attr('string')
   status: DS.attr('string', defaultValue: 'new')
   notes: DS.attr('string')
+
+  fullName: ( ->
+    @get('firstName') + ' ' + @get('lastName')
+  ).property('firstName', 'lastName')
