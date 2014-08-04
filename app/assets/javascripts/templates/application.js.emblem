@@ -1,2 +1,10 @@
-h1 A brand spanking new injixo HR application...
-outlet
+header
+  article
+    .logo
+      h1
+        a href="#" Human Resources
+
+section#main
+  = outlet
+
+footer
