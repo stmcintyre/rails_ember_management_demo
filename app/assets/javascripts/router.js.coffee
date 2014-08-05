@@ -1,7 +1,9 @@
 App.Router.reopen
-  location: 'auto'
   rootURL: '/'
+  location: 'auto'
+
 
 App.Router.map ()->
   @resource 'employees', path: '/', ->
-    @resource 'employee', path: '/employees/:id'
+    @resource 'employee', path: '/employees/:id', ->
+      @route 'edit'
