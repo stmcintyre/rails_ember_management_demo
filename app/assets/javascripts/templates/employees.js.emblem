@@ -2,8 +2,9 @@ article#employees
   h1
     | Employees
     link-to 'employees.new' | New Employee
+  view Ember.TextField value=search placeholder="search" classNames="search"
   ul
-    each employee in controller
+    each employee in employees
       link-to 'employee' employee tagName="li"
         employee.fullName
 
