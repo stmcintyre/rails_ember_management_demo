@@ -1,25 +1,25 @@
-article#Employee
+article#employee
   h1
-    model.fullName
+    fullName
 
   form
     fieldset
       dl
-        dt: label First Name:
-        dd: view Ember.TextField value=model.firstName
+        dt: label for=view.firstName.elementId First Name:
+        dd: view Ember.TextField value=model.firstName viewName="firstName"
 
       dl
-        dt: label Last Name:
-        dd: view Ember.TextField value=model.lastName
+        dt: label for=view.lastName.elementId Last Name:
+        dd: view Ember.TextField value=model.lastName viewName="lastName"
 
       dl
-        dt: label Email:
-        dd: view Ember.TextField value=model.email
+        dt: label for=view.email.elementId Email:
+        dd: view Ember.TextField value=model.email viewName="email"
 
       dl
-        dt: label Phone:
-        dd: view Ember.TextField value=model.phone
+        dt: label for=view.phone.elementId Phone:
+        dd: view Ember.TextField value=model.phone viewName="phone"
 
     fieldset.actions
       input type='submit' value='Save Changes' click="saveChanges"
-      a.cancel href="#" click="cancel" cancel
+      a.cancel href='#' click="cancel" cancel
