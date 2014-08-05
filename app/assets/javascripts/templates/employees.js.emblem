@@ -1,5 +1,7 @@
 article#employees
-  h1 Employees
+  h1
+    | Employees
+    link-to 'employees.new' | New Employee
   ul
     each employee in controller
       link-to 'employee' employee tagName="li"
