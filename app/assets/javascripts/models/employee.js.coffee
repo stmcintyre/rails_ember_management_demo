@@ -11,4 +11,8 @@ App.Employee = DS.Model.extend
   ).property('firstName', 'lastName')
 
 App.Employee.reopenClass
+
   STATUSES: ['New', 'Probation', 'Vacation', 'Sick', 'Suspended', 'Departed', 'Deceased']
+
+  valid: (fields) ->
+    fields.firstName and fields.lastName

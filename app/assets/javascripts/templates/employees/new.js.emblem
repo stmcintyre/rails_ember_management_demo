@@ -1,6 +1,9 @@
 article#employee
   h1 New Employee
 
+  if showError
+    .error Employees must have a first and last name.
+
   form
     fieldset
       dl
