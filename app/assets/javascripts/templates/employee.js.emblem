@@ -1,32 +1,32 @@
 = outlet
 
 unless isEditing
-  article#Employee
+  article#employee
     h1
-      model.fullName
+      fullName
       link-to 'edit' 'employee.edit' model classNames='edit'
 
     p
       ' Name:
-      model.fullName
+      fullName
 
     p
       ' Email:
-      model.email
+      email
 
     p
       ' Phone:
-      model.phone
+      phone
 
     p
-      label Status:
+      label for=view.status.elementId Status:
       '
-      view Ember.Select content=App.Employee.STATUSES value=model.status
+      view Ember.Select content=App.Employee.STATUSES value=model.status viewName="status"
 
     p
-      label Notes:
+      label for=view.notes.elementId Notes:
       br
-      view Ember.TextArea value=model.notes
+      view Ember.TextArea value=model.notes viewName="notes"
 
     p
       a.delete href='#' click="delete" delete

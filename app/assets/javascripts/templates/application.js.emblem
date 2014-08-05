@@ -2,7 +2,7 @@ header
   article
     .logo
       h1
-        a href="#" Human Resources
+        a href="/" injixo HR
 
 section#main
   = outlet
