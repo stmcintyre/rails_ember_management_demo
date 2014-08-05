@@ -9,3 +9,6 @@ App.Employee = DS.Model.extend
   fullName: ( ->
     @get('firstName') + ' ' + @get('lastName')
   ).property('firstName', 'lastName')
+
+App.Employee.reopenClass
+  STATUSES: ['New', 'Probation', 'Vacation', 'Sick', 'Suspended', 'Departed', 'Deceased']
