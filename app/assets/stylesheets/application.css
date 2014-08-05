@@ -89,7 +89,7 @@ a.delete {
 }
 
 header {
-  background: #f57011;
+  background: #009495;
   height: 47px;
 }
 
@@ -148,7 +148,7 @@ form fieldset.actions .cancel {
   padding-left: 15px;
 }
 
-article#leads {
+article#employees {
   margin: 30px 35px 0 0;
   width: 25%;
   background: #f6f6f6;
@@ -156,54 +156,54 @@ article#leads {
   padding: 15px 20px 20px;
 }
 
-article#leads h1 {
+article#employees h1 {
   font-size: 20px;
   padding-left: 6px;
   padding-bottom: 14px;
 }
 
-article#leads h1 a {
+article#employees h1 a {
   font-size: 15px;
   float: right;
   font-weight: normal;
   margin: 3px 0 0 0;
 }
 
-article#leads input.search {
+article#employees input.search {
   width: 96%;
   margin: 0 0 12px 5px;
   padding: 2px 0 3px 3px;
 }
 
-article#leads ul li {
+article#employees ul li {
   border-bottom: 1px solid #dddddd;
   padding: 8px 6px 10px;
   cursor: pointer;
 }
 
-article#leads ul li:hover, article#leads ul li.active {
-  background: #f8e5ce;
+article#employees ul li:hover, article#employees ul li.active {
+  background: #B9E1E1;
 }
 
-article#lead {
+article#employee {
   margin: 30px;
   width: 60%;
   float: left;
 }
 
-article#lead a.edit {
+article#employee a.edit {
   font-size: 15px;
   font-weight: normal;
   margin-left: 15px;
 }
 
-article#lead .unsaved, article#lead .saving {
+article#employee .unsaved, article#employee .saving {
   color: #b20000;
   display: inline-block;
   padding: 0 0 0 20px;
 }
 
-article#lead .saving {
+article#employee .saving {
   color: #00d936;
 }
 
@@ -223,7 +223,7 @@ label {
 }
 
 input[type='submit'] {
-  background: #f57011;
+  background: #009495;
   border: none;
   padding: 5px 25px 8px;
   font-weight: 500;
