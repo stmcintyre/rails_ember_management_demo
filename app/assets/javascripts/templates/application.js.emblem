@@ -2,7 +2,7 @@ header
   article
     .logo
       h1
-        a href="/" injixo HR
+        a href="/" Rails Ember Management Demo
 
 section#main
   = outlet
